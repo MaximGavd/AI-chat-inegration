@@ -16,6 +16,7 @@
                     </div>  
                 </div> 
                 <div class="ai_chat_expand">
+                    <div class="ai_chat_expand_message--only">
                     <div class="ai_chat_full_window">
                         <img src="<?php echo plugins_url('/assets/img/full_window.png' , __FILE__); ?>" />
                     </div>
@@ -23,9 +24,17 @@
                         <div class="ai_chat_logo"><img src="<?php echo plugins_url( '/assets/img/chatgpt-logo.png' , __FILE__ );  ?>" /> </div>
                         <div class="ai_chat_text ai_chat_conv_start">You can chose one of the messages below or write down your question!</div>
                     </div>
-                    <div id="ai_chat_message user_message_sent" class="ai_chat_message user_message_sent">
-                        <div class="ai_chat_logo"><img src="<?php echo $userAvatar; ?>" /></div>
+                    <!-- <div id="ai_chat_message user_message_sent" class="ai_chat_message user_message_sent">
+                        <div class="ai_chat_logo"><img src="<?php // echo $userAvatar; ?>" /></div>
                         <div class="ai_chat_text">New product</div>
+                    </div> -->
+
+                    </div>
+                    <div id="ai_chat_input" class="ai_chat_input">
+                        <form action="/" method="POST">
+                            <textarea rows="5" class="ai_chat_chating" type="text" placeholder="Start chating..."></textarea>
+                            <input class="ai_chat_sent_message" type="submit" value="↗" />
+                        </form>
                     </div>
                 </div>                 
             </div>            
