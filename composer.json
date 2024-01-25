@@ -1,0 +1,14 @@
+{
+    "name": "maximgavdzinschi/chat-helper",
+    "autoload": {
+        "psr-4": {
+            "User\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MaximGavd",
+            "email": "maximgavdzinschi04@gmail.com"
+        }
+    ]    
+}
