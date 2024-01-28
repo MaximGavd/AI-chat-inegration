@@ -1,3 +1,7 @@
+const initStrings = {
+    loadGreeting: "Hello! I'm AI assistant! May i help you?",
+    agreedInfo: "You can chose one of the messages below or write down your question!" 
+}
 const vars = {
     messageBlock: document.querySelector('.ai_chat_block'),
     greeting: document.querySelector('.ai_chat_text'),   
@@ -9,13 +13,12 @@ const vars = {
     ai_chat_load: document.querySelector('.ai_chat_load')
 }
 const conversation = {
-    convAppears() {        
+    convAppears() {            
         localStorage.getItem('closed') == 'false' ? 
         (window.scrollY > 300 &&  vars.messageBlock.classList.add('message_open')) :
         vars.messageBlock.classList.remove('message_open')
     },   
-    charAppears() {  
-        let text = "Hello! I'm AI assistant! May i help you?";
+    charAppears(text) {          
         let i = 0;    
         let showButtons = () => {
             vars.buttons.forEach(item => {
@@ -69,7 +72,6 @@ document.addEventListener('DOMContentLoaded' , function() {
     vars.ai_chat_icon.addEventListener('click' , function() {
         conversation.iconClick();
     })
-    conversation.charAppears();
-    conversation.checkingConverstion(); // checking the converstaion 
-
+    conversation.charAppears(initStrings.loadGreeting);    
 })
+conversation.checkingConverstion();
