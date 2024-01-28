@@ -150,3 +150,13 @@
     overflow-x: scroll;
     margin-bottom: 25px;
 }
+.ai_chat_quick_chat {
+    display: flex;
+    gap: 10px;
+}
+.ai_chat_quick--button {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 7px 25px;
+    cursor: pointer;
+}

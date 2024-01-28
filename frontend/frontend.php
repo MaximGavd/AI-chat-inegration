@@ -30,6 +30,14 @@
                     </div> -->
 
                     </div>
+                    <div id="ai_chat_quick_chat" class="ai_chat_quick_chat">
+                        <form action="/" method="post">                            
+                            <button class="ai_chat_quick--button">New products</button>
+                            <button class="ai_chat_quick--button">Sale products</button>
+                            <button class="ai_chat_quick--button">Coupons</button>
+                            <button class="ai_chat_quick--button">Popular products</button>
+                        </form>
+                    </div>
                     <div id="ai_chat_input" class="ai_chat_input">
                         <form action="/" method="POST">
                             <textarea rows="5" class="ai_chat_chating" type="text" placeholder="Start chating..."></textarea>
