@@ -13,8 +13,6 @@ const conversation = {
         localStorage.getItem('closed') == 'false' ? 
         (window.scrollY > 300 &&  vars.messageBlock.classList.add('message_open')) :
         vars.messageBlock.classList.remove('message_open')
-
-        localStorage.getItem('closed') == null && vars.messageBlock.classList.add('message_open')
     },   
     charAppears() {  
         let text = "Hello! I'm AI assistant! May i help you?";
@@ -72,6 +70,6 @@ document.addEventListener('DOMContentLoaded' , function() {
         conversation.iconClick();
     })
     conversation.charAppears();
-})
+    conversation.checkingConverstion(); // checking the converstaion 
 
-conversation.checkingConverstion();
+})
