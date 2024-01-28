@@ -47,6 +47,7 @@
 .ai_chat_load_hide {
     scale: 0;
     transition: .5s all;
+    position: absolute;
 }
 .ai_message_buttons {
     display: flex;
@@ -85,24 +86,26 @@
     scale: 1;
     transition: .5s all;  
     transition-delay: .5s;
+    top: 0;
 }
 .ai_chat_full_window {
     position: absolute;
-    top: -10px;
-    right: 10px;
+    top: 0px;
+    right: -10px;
     cursor: pointer;
 }
 .chat_started {    
-    width: 400px; 
-    position: relative;
-    transition: width 2s;    
+    width: 400px;
+    position: relative;    
 }
 .ai_chat_conv_start {
     max-width: 80%;
 }
+.chat_expend_visible {
+    position: relative;
+}
 .ai_chat_expand .ai_chat_message {
     margin-bottom: 30px;
-<<<<<<< HEAD
 }
 .ai_chat_input {
     position: relative;
@@ -146,16 +149,4 @@
     height: 250px;
     overflow-x: scroll;
     margin-bottom: 25px;
-}
-.ai_chat_quick_chat {
-    display: flex;
-    gap: 10px;
-}
-.ai_chat_quick--button {
-    margin-bottom: 10px;
-    border-radius: 20px;
-    padding: 7px 25px;
-    cursor: pointer;
-=======
->>>>>>> parent of 4819e23 (front almost done)
 }
